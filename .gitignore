@@ -1,0 +1,25 @@
+# ==========================================
+# 1. COMPILED BINARIES & EXECUTABLES (Universal)
+# ==========================================
+# Match all Windows executables and debug databases
+*.exe
+*.dll
+*.pdb
+
+# Match all Linux/macOS shared libraries and compiled objects
+*.so
+*.dylib
+*.o
+*.obj
+
+# Match any file that has NO file extension (Crucial for macOS/Linux binaries)
+# This matches files like 'order_book', 'main', 'test', etc.
+*
+!*/
+!*.*
+
+# ==========================================
+# 2. OPERATING SYSTEM TRASH
+# ==========================================
+.DS_Store
+Thumbs.db
